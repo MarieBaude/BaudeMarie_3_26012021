@@ -2,6 +2,8 @@
 @import "utils.scss";
 @import "components.scss";
 
+
+
 // Header
 header {
     display: flex;
@@ -69,6 +71,23 @@ h3 {
     font-size: 20px;
     padding-bottom: 30px;
 }
+
+// Footer
+footer {
+    background-color: $dark-grey;
+    color: white;
+    padding: 30px 0 45px 25px ;
+    .fa-utensils, .fa-hands-helping {
+        margin-right: 13px;
+    }
+    .logo-footer {
+        fill: white;
+    }
+    li {
+        margin-bottom: 10px;
+    } 
+}
+
 
 
 
