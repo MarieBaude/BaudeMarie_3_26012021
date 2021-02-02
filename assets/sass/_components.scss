@@ -16,7 +16,6 @@ button {
 
 .btn-fonction {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     background-color: $light-grey;
     padding: 22px;
@@ -34,6 +33,13 @@ button {
         background-color: $primary-color;
         padding: 5px;
         color: white;
-        margin-left: -60px;
+        margin: 0 20px 0 -30px;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        font-size: 13px;
+    }
+    i {
+        margin-right: 22px;
     }
 }
