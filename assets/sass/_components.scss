@@ -43,3 +43,21 @@ button {
         margin-right: 22px;
     }
 }
+
+// Cartes
+.container-restau {
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 150px;
+    }
+}
+
+.card {
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    width: 90%;
+}

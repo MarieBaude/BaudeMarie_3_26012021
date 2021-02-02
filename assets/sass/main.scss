@@ -14,7 +14,6 @@ header {
     }
     .adress_city {
         background-color: $medium-grey;
-        border-top: black;
         padding: 20px 0;
         display: flex;
         justify-content: center;
@@ -25,7 +24,7 @@ header {
     }
 }
 
-// Section
+// Sections
 .container {
     display: flex;
     flex-direction: column;
@@ -42,7 +41,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 60px;
 }
+
+// Section 3
+.container-restau {
+    background-color: $light-grey;
+}
+
 
 // Titres
 h1 {
