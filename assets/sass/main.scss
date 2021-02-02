@@ -9,8 +9,12 @@ header {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    img {
+        margin-bottom: 15px;
+    }
     .adress_city {
         background-color: $medium-grey;
+        border-top: black;
         padding: 20px 0;
         display: flex;
         justify-content: center;
@@ -24,7 +28,16 @@ header {
 // Section
 .container {
     display: flex;
+}
+.container-explor {
     flex-direction: column;
     align-items: center;
 }
 
+h1 {
+
+}
+
+h3 {
+
+}
