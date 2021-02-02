@@ -48,7 +48,8 @@ button {
 .container-restau {
     .pack-card {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 60px;
     }
     .card {
@@ -58,12 +59,16 @@ button {
         border-radius: 10px;
         width: 90%;
         height: 250px;
+        margin-bottom: 18px;
         img {
             width: 100%;
             height: 170px;
             object-fit: cover;
             object-position: bottom;
             border-radius: 10px 10px 0 0;
+        }
+        .img-position {
+            object-position: 0 -183px;
         }
         .card-img {
             display: flex;
@@ -87,6 +92,23 @@ button {
             .card-text {
                 display: flex;
                 flex-direction: column;
+                h2{
+                    margin: 20px 0 0 15px;
+                    font-size: 20px;
+                }
+                h3 {
+                    padding: 0;
+                    text-align: left;
+                    margin: 5px 0 0 15px;
+                    font-size: 18px;
+                }
+            }
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 25px;
+                font-size: 30px;
             }
         }
     }
