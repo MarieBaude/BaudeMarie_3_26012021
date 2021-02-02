@@ -15,9 +15,14 @@ button {
 }
 
 .btn-fonction {
+    display: flex;
+    justify-content: space-around;
     background-color: $light-grey;
     padding: 30px;
     width: 80%;
+    border-radius: 25px;
+    box-shadow: $medium-grey 1px 3px 5px;
+    margin-bottom: 20px;
     &:hover {
         background-color: $primary-color-light;
         i {
@@ -28,5 +33,6 @@ button {
         background-color: $primary-color;
         padding: 5px;
         color: white;
+        margin-left: -55px;
     }
 }
