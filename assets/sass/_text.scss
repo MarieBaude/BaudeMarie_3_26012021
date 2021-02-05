@@ -1,3 +1,4 @@
+// Page index
 h1 {
     font-family: 'Roboto';
     font-weight: bold;
@@ -23,4 +24,33 @@ h3 {
 span, li {
     font-family: 'Roboto';
     font-weight: normal;
+}
+
+// Page Menu
+.title-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 25px;
+    h2 {
+        margin: 0;
+    }
+    .fa-heart {
+        font-size: 24px;
+    }
+}
+
+.contenant-menu h3 {
+    text-align: left;
+}
+
+.text-name {
+
+}
+
+.text-details {
+
+}
+
+.text-price {
+
 }
