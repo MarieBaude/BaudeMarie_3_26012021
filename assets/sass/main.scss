@@ -1,12 +1,11 @@
 @import "reset.scss";
 @import "variables.scss";
-
+@import "fonts.scss";
+@import "text.scss";
 @import "header.scss";
 @import "buttons.scss";
 @import "cards.scss";
 @import "footer.scss";
-
-
 
 
 // Sections
@@ -34,27 +33,6 @@
 // Section 3
 .container-restau {
     background-color: $light-grey;
-}
-
-// Titres
-h1 {
-    font-weight: bold;
-    text-align: center;
-    font-size: 26px;
-    padding: 40px 75px 18px 75px;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 24px;
-    margin: 50px 0 30px 18px;
-}
-
-h3 {
-    font-weight: lighter;
-    text-align: center;
-    font-size: 20px;
-    padding-bottom: 30px;
 }
 
 
