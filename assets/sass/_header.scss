@@ -4,8 +4,10 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin: auto;
+    max-width: 980px;
     img {
-        margin-bottom: 15px;
+        margin: 15px 0;
     }
     .adress_city {
         background-color: $medium-grey;

@@ -22,7 +22,6 @@
         width: 90%;
         height: 170px;
         object-fit: cover;
-        object-position: bottom;
         border-radius: 10px 10px 0 0;
         position: absolute;
     }
@@ -75,5 +74,37 @@
         justify-content: center;
         margin-right: 25px;
         font-size: 30px;
+    }
+}
+
+// Responsive
+// Tablette
+@media screen and (min-width: 768px) {
+    .container-restau .pack-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .card{
+            width: 40%;
+            img {
+                width: 40%;
+            }
+            .card-img .new {
+                right: 80px;
+            }
+        }
+    } 
+}
+
+// Desktop
+@media screen and (min-width: 980px) {
+    .container-restau .pack-card .card{
+        width: 405px;
+        img {
+            width: 405px;
+        }
+        .card-img .new {
+            right: 80px;
+        }
     }
 }
