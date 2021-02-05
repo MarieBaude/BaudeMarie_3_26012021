@@ -1,35 +1,20 @@
 @import "reset.scss";
-@import "utils.scss";
-@import "components.scss";
+@import "variables.scss";
+
+@import "header.scss";
+@import "buttons.scss";
+@import "cards.scss";
+@import "footer.scss";
 
 
 
-// Header
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    img {
-        margin-bottom: 15px;
-    }
-    .adress_city {
-        background-color: $medium-grey;
-        padding: 20px 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        span {
-            margin-left: 15px;
-        }
-    }
-}
 
 // Sections
 .container {
     display: flex;
     flex-direction: column;
+    max-width: 980px;
+    margin: auto;
 }
 
 // Section 1
@@ -72,18 +57,6 @@ h3 {
     padding-bottom: 30px;
 }
 
-// Footer
-footer {
-    background-color: $dark-grey;
-    color: white;
-    padding: 30px 0 45px 25px ;
-    .fa-utensils, .fa-hands-helping {
-        margin-right: 13px;
-    }
-    li {
-        margin-bottom: 10px;
-    } 
-}
 
 
 
