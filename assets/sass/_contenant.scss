@@ -32,12 +32,11 @@
     flex-direction: column;
     border-radius: 40px 40px 0 0;
     background-color: $light-grey;
-    
-    top: 305px;
     width: 100%;
+    margin-top: -50px;
     .direction-btn-menu {
         display: flex;
         justify-content: center;
-        margin: 40px 0 50px 0;
+        margin: 40px 0 15px 0
     }
 }
