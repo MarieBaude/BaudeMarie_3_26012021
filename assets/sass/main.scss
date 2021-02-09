@@ -1,18 +1,19 @@
 @import "reset";
-@import "variables";
-@import "fonts";
-@import "header";
-@import "contenant";
-@import "text";
-@import "buttons";
-@import "cards";
-@import "footer";
+@import "utils-variables";
+// Base
+@import "base-fonts";
+@import "base-text";
+// Layout
+@import "layout-header";
+@import "layout-footer";
+// Pages
+@import "pages-index";
+@import "pages-menu";
+// Composant
+@import "component-buttons";
+// Animation
 @import "animation";
 
-.img-menu img{
-    max-width: 980px;
-    width: 100%;
-}
 
 
 
