@@ -57,6 +57,9 @@ span, li {
 
 .text-details {
     font-family: 'Roboto-thin';
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .text-price {
