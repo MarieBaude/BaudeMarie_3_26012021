@@ -1,17 +1,24 @@
 @import "reset";
+
+// Utilitaires
 @import "utils-variables";
-// Base
+
+// Bases
 @import "base-fonts";
 @import "base-text";
-// Layout
+
+// Réutilissable
 @import "layout-header";
 @import "layout-footer";
-// Pages
+
+// Pages unique
 @import "pages-index";
 @import "pages-menu";
-// Composant
+
+// Composants
 @import "component-buttons";
-// Animation
+
+// Animations
 @import "animation";
 
 

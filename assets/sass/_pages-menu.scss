@@ -22,13 +22,34 @@
 // Menu
 .dish {
     display: flex;
-    flex-direction: column;
-    margin: 0 10px 10px 10px;
-    background-color: white;
-    border-radius: 12px;
-    padding: 10px;
-    div {
+    justify-content: space-between;
+    margin-right: 10px;
+    .dish-text {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 10px 10px 10px;
+        background-color: white;
+        border-radius: 12px;
+        padding: 10px;
+        width: 100%;
+        position: relative;
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    button {
+        display: none;
+        &:hover {
+            display: block;
+            background-color: $tertiary-color;
+            border-radius: 0 12px 12px 0;
+            color: white;
+            position: absolute;
+            right: 20px;
+            height: 65px;
+            width: 55px;
+        }
     }
 }
+
