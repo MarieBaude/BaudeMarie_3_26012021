@@ -13,9 +13,8 @@
     background-color: white;
     border-radius: 12px;
     padding: 10px;
-}
-
-.footer-menu {
-    position: relative;
-    top: 1060px;
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
 }

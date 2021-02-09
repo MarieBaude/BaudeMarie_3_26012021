@@ -1,0 +1,26 @@
+// Sections
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 980px;
+}
+
+// Section 1
+.container-explor {
+    align-items: center;
+    background-color: $light-grey;
+}
+
+// Section 2
+.container-fonction > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+// Section 3
+.container-restau {
+    background-color: $light-grey;
+}
