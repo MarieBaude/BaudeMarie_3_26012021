@@ -5,3 +5,17 @@
     top: 305px;
     width: 100%;
 }
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 10px 10px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.footer-menu {
+    position: relative;
+    top: 1060px;
+}
