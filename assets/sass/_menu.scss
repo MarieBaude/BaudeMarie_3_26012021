@@ -1,9 +1,16 @@
 .contenant-menu {
+    display: flex;
+    flex-direction: column;
     border-radius: 40px 40px 0 0;
     background-color: $light-grey;
     position: absolute;
     top: 305px;
     width: 100%;
+    .btn-menu {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0 50px 0;
+    }
 }
 
 .dish {
@@ -17,4 +24,8 @@
         display: flex;
         justify-content: space-between;
     }
+}
+
+.fa-heart {
+    margin-right: 30px;
 }
