@@ -39,9 +39,11 @@
         }
     }
     button {
-        display: none;
+        overflow: hidden;
+        i {
+            opacity: 0;
+        }
         &:hover {
-            display: block;
             background-color: $tertiary-color;
             border-radius: 0 12px 12px 0;
             color: white;
@@ -49,6 +51,9 @@
             right: 20px;
             height: 65px;
             width: 55px;
+            i {
+                opacity: 2;
+            }
         }
     }
 }
