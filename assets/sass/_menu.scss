@@ -1,4 +1,5 @@
 .contenant-menu {
+    max-width: 980px;
     display: flex;
     flex-direction: column;
     border-radius: 40px 40px 0 0;
@@ -6,7 +7,7 @@
     position: absolute;
     top: 305px;
     width: 100%;
-    .btn-menu {
+    .direction-btn-menu {
         display: flex;
         justify-content: center;
         margin: 40px 0 50px 0;
