@@ -2,66 +2,67 @@
 .vignets {
     animation: fadein 3s;
   }
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
   
-  @keyframes fadein {
-    from {
-        opacity:0;
+// Mouvement bouton
+/*.slide-left:hover {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+  @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
-    to {
-        opacity:1;
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
     }
   }
-  
-  // Mouvement bouton
-  /*.slide-left:hover {
-      -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-              animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-  
-   @-webkit-keyframes slide-left {
-      0% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-      }
-      100% {
-        -webkit-transform: translateX(-100px);
-                transform: translateX(-100px);
-      }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
-    @keyframes slide-left {
-      0% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-      }
-      100% {
-        -webkit-transform: translateX(-100px);
-                transform: translateX(-100px);
-      }
-    } */
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+} */
   
   // Icon rotation
-  .rotate-center {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-            animation: rotate-center 0.6s ease-in-out both;
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
-  
-    @-webkit-keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
     }
   }
+
   @keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
