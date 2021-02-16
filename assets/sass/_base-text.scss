@@ -1,4 +1,4 @@
-// Page index
+// INDEX
 h1 {
     font-family: 'Roboto';
     font-weight: bold;
@@ -26,21 +26,22 @@ span, li {
     font-weight: normal;
 }
 
-// Page Menu
+// MENU
 .title-menu {
     display: flex;
     justify-content: space-between;
-    margin: 40px 0 0 15px;
+    margin: 40px 15px 0 15px;
     h2 {
         margin: 0;
         font-family: 'Shrikhand';
         font-size: 30px;
     }
-    .heart-bw {
+    .heart-menu {
         font-size: 24px;
     }
 }
 
+// Catégories
 .contenant-menu h3 {
     text-align: left;
     margin: 38px 0 15px 15px;
@@ -49,6 +50,7 @@ span, li {
     width: 38px;
 }
 
+// Les plats
 .text-name {
     font-family: 'Roboto-bold';
     margin-bottom: 10px;
