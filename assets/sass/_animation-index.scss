@@ -30,7 +30,8 @@
     100% {transform: rotate(360deg);}
 }
 
-// Fonction timer
+// Timer
+
 body:active {
     .loading {
         display: none;
@@ -55,7 +56,7 @@ body:active {
     .heart-color {
         opacity: 0;
         position: absolute;
-        color: purple; //linear-gradient($secondary-color, $primary-color)
+        color: purple; //linear-gradient($secondary-color, $primary-color);
         transform: scale(1);
     }
     &:hover {
