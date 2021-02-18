@@ -21,7 +21,7 @@
     object-fit: cover;
 }
 
-// Menu
+// Les plats
 .dish {
     display: flex;
     justify-content: space-between;
@@ -38,24 +38,6 @@
         div {
             display: flex;
             justify-content: space-between;
-        }
-    }
-    button {
-        overflow: hidden;
-        i {
-            opacity: 0;
-        }
-        &:hover {
-            background-color: $tertiary-color;
-            border-radius: 0 12px 12px 0;
-            color: white;
-            position: absolute;
-            right: 20px;
-            height: 65px;
-            width: 55px;
-            i {
-                opacity: 2;
-            }
         }
     }
 }

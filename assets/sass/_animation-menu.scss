@@ -20,6 +20,25 @@ $timer-fadein: 1000ms;
 }
   
 // Mouvement bouton
+.dish button {
+  overflow: hidden;
+  i {
+     display: none;
+  }
+  &:hover {
+      background-color: $tertiary-color;
+      border-radius: 0 12px 12px 0;
+      color: white;
+      position: absolute;
+      right: 20px;
+      height: 65px;
+      width: 55px;
+      i {
+          display: initial;
+      }
+  }
+}
+
 .slide-left:hover {
   animation: slide-left 200ms both;
 }
