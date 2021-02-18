@@ -20,6 +20,7 @@ $timer-fadein: 1000ms;
 }
   
 // Mouvement bouton
+// CSS du bouton
 .dish button {
   overflow: hidden;
   i {
@@ -39,6 +40,7 @@ $timer-fadein: 1000ms;
   }
 }
 
+// Animation des boutons
 .slide-left:hover {
   animation: slide-left 200ms both;
 }
