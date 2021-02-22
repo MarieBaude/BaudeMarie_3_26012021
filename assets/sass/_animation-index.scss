@@ -1,26 +1,4 @@
 // Loading
-body {
-    animation: 2000ms showpage;
-    @keyframes showpage {
-        from {
-            .loading {
-                display: block;
-            }
-            .page {
-                display: none;
-            }
-        }
-        to {
-            .loading {
-                display: none;
-            }
-            .page {
-                display: block;
-            }
-        }
-    }
-}
-
 .loading {
     display: flex;
     justify-content: center;
@@ -47,6 +25,29 @@ body {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
+
+/*body {
+    animation: 2000ms showpage;
+}
+
+@keyframes showpage {
+    from {
+        .loading {
+            display: block;
+        }
+        .page {
+            display: none;
+        }
+    }
+    to {
+        .loading {
+            display: none;
+        }
+        .page {
+            display: block;
+        }
+    }
+}*/
 
 // Remplissage coeur
 .heart-wrapper {
