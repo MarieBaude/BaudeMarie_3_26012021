@@ -35,8 +35,8 @@
 }
     
 // Animation slide du bouton des plats
-@keyframes slide-left {
-  0% {transform: translateX(30px);}
+@keyframes slide-right {
+  0% {transform: translateX(60px);}
   100% {transform: translateX(0px);}
 }
   

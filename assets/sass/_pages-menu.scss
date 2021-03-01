@@ -46,48 +46,59 @@
 // Les plats
 .dish {
     opacity: 0;
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: white;
     border-radius: 12px;
     width: 100%;
     overflow: hidden;
+    &:hover .slide-right{
+        animation: slide-right 0.6s ease-in forwards;
+        animation-delay: 200ms;
+        right: 0;
+        &:hover {
+            background-color: $tertiary-color;
+            border-radius: 0 12px 12px 0;
+            color: white;
+            position: absolute;
+            right: 0;
+            height: 85px;
+            width: 55px;
+            opacity: 1;
+        }
+    }
+    &:hover .text-details {
+        width: -60px;
+    }
+    &:hover .text-price {
+        animation: slide-right 0.6s ease-in forwards;
+        right: 60px;
+    }
+    &:hover .rotate-center {
+        animation: rotate-center 0.6s ease-in forwards;
+        animation-delay: 1s;
+    }
     .abc {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         width: 100%;
-        &:hover {
-            animation: slide-right 0.6s cubic-bezier(0.398, 0.575, 0.565, 1.800) forwards;
-        }
     }
     .dish-text {
         padding: 20px;
         display: flex;
         flex-direction: column;
         position: relative;
-    } 
+    }
 }
 
-.slide-left{
+.slide-right{
     overflow: hidden;
     i {
         display: none;
     }
-    &:hover {
-        background-color: $tertiary-color;
-        border-radius: 0 12px 12px 0;
-        color: white;
-        position: absolute;
-        right: 0;
-        height: 85px;
-        width: 55px;
-        opacity: 1;
-        i {
-            display: initial;
-        }
-    }
-  }
+}
 
 .text-name {
     font-family: 'Roboto-bold';
@@ -105,14 +116,7 @@
 .text-price {
     font-family: 'Roboto-bold';
     padding-bottom: 20px;
+    position: absolute;
+    right: 60px;
 }
 
-// Animation des boutons
-.slide-left:hover {
-    animation: slide-left 200ms both;
-}
-
-// Icon rotation
-.rotate-center {
-    animation: rotate-center 0.6s ease-in-out both;
-}
