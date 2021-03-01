@@ -26,44 +26,5 @@ span, li {
     font-weight: normal;
 }
 
-// MENU
-.title-menu {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 15px 0 15px;
-    h2 {
-        margin: 0;
-        font-family: 'Shrikhand';
-        font-size: 30px;
-    }
-    .heart-menu {
-        font-size: 24px;
-    }
-}
 
-// Catégories
-.contenant-menu h3 {
-    text-align: left;
-    margin: 38px 0 15px 15px;
-    border-bottom: 3px $tertiary-color solid;
-    padding-bottom: 7px;
-    width: 38px;
-}
 
-// Les plats
-.text-name {
-    font-family: 'Roboto-bold';
-    margin-bottom: 10px;
-    font-size: 19px;
-}
-
-.text-details {
-    font-family: 'Roboto-thin';
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.text-price {
-    font-family: 'Roboto-bold';
-}
