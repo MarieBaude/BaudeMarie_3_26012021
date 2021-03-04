@@ -1,19 +1,3 @@
-// Contenant 
-.contenant-menu {
-    max-width: 980px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 40px 40px 0 0;
-    background-color: $light-grey;
-    width: 100%;
-    margin-top: -50px;
-    .direction-btn-menu {
-        display: flex;
-        justify-content: center;
-        margin: 40px 0 15px 0
-    }
-}
-
 .img-menu img{
     max-width: 980px;
     width: 100%;
@@ -21,29 +5,32 @@
     object-fit: cover;
 }
 
-.title-menu {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 15px 0 15px;
-    h2 {
-        margin: 0;
-        font-family: 'Shrikhand';
-        font-size: 30px;
+.contenant-menu {
+    border-radius: 40px 40px 0 0;
+    background-color: $light-grey;
+    width: 100%;
+    margin-top: -50px;
+    .title-menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 15px 0 15px;
+        h2 {
+            margin: 0;
+            font-family: 'Shrikhand';
+            font-size: 30px;
+        }
     }
-    .heart-menu {
-        font-size: 24px;
+    h3 {
+        text-align: left;
+        margin: 38px 0 15px 15px;
+        border-bottom: 3px $tertiary-color solid;
+        padding-bottom: 7px;
+        width: 38px;
     }
 }
 
-.contenant-menu h3 {
-    text-align: left;
-    margin: 38px 0 15px 15px;
-    border-bottom: 3px $tertiary-color solid;
-    padding-bottom: 7px;
-    width: 38px;
-}
 
-// Les plats
+
 .dish {
     opacity: 0;
     position: relative;
@@ -51,39 +38,36 @@
     justify-content: space-between;
     background-color: white;
     border-radius: 12px;
-    width: 100%;
     overflow: hidden;
+    margin: 0 15px 15px 15px;
+    .slide-right, i{
+        opacity: 0;
+    }
     &:hover .slide-right{
         animation: slide-right 0.6s ease-in forwards;
         animation-delay: 200ms;
         right: 0;
-        &:hover {
-            background-color: $tertiary-color;
-            border-radius: 0 12px 12px 0;
-            color: white;
-            position: absolute;
-            right: 0;
-            height: 85px;
-            width: 55px;
+        background-color: $tertiary-color;
+        border-radius: 0 12px 12px 0;
+        color: white;
+        position: absolute;
+        height: 85px;
+        width: 55px;
+        opacity: 1;
+        i {
             opacity: 1;
         }
     }
     &:hover .text-details {
-        width: -60px;
+        width: -80px;
     }
     &:hover .text-price {
         animation: slide-right 0.6s ease-in forwards;
-        right: 60px;
+        right: 80px;
     }
     &:hover .rotate-center {
         animation: rotate-center 0.6s ease-in forwards;
         animation-delay: 1s;
-    }
-    .abc {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        width: 100%;
     }
     .dish-text {
         padding: 20px;
@@ -93,12 +77,7 @@
     }
 }
 
-.slide-right{
-    overflow: hidden;
-    i {
-        display: none;
-    }
-}
+
 
 .text-name {
     font-family: 'Roboto-bold';
@@ -117,6 +96,12 @@
     font-family: 'Roboto-bold';
     padding-bottom: 20px;
     position: absolute;
-    right: 60px;
+    right: 20px;
+    bottom: 0px;
 }
 
+.direction-btn-menu {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 15px 0
+}

@@ -20,8 +20,8 @@
 // Boucle apparition plat
 @for $i from 1 through 9 {
     .animation-delay-#{$i} {
-      animation: fade-in 0.6s cubic-bezier(0.398, 0.575, 0.565, 1.800) forwards;
-      animation-delay: 1000ms * $i;
+      animation: fade-in 0.6s ease-in forwards;
+      animation-delay: 400ms * $i;
     }
   }
 
