@@ -29,8 +29,7 @@
     }
 }
 
-
-
+// Plats
 .dish {
     opacity: 0;
     position: relative;
@@ -40,26 +39,47 @@
     border-radius: 12px;
     overflow: hidden;
     margin: 0 15px 15px 15px;
+    .dish-text {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .text-name {
+            font-family: 'Roboto-bold';
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+        .text-details {
+            font-family: 'Roboto-thin';
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .text-price {
+        font-family: 'Roboto-bold';
+        padding-bottom: 20px;
+        position: absolute;
+        right: 20px;
+        bottom: 0px;
+    }
     .slide-right, i{
         opacity: 0;
     }
     &:hover .slide-right{
         animation: slide-right 0.6s ease-in forwards;
-        animation-delay: 200ms;
         right: 0;
         background-color: $tertiary-color;
         border-radius: 0 12px 12px 0;
         color: white;
         position: absolute;
         height: 85px;
-        width: 55px;
+        width: 65px;
         opacity: 1;
         i {
             opacity: 1;
+            font-size: 25px;
         }
-    }
-    &:hover .text-details {
-        width: -80px;
     }
     &:hover .text-price {
         animation: slide-right 0.6s ease-in forwards;
@@ -67,37 +87,8 @@
     }
     &:hover .rotate-center {
         animation: rotate-center 0.6s ease-in forwards;
-        animation-delay: 1s;
+        animation-delay: 300ms;
     }
-    .dish-text {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-}
-
-
-
-.text-name {
-    font-family: 'Roboto-bold';
-    margin-bottom: 10px;
-    font-size: 19px;
-}
-
-.text-details {
-    font-family: 'Roboto-thin';
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.text-price {
-    font-family: 'Roboto-bold';
-    padding-bottom: 20px;
-    position: absolute;
-    right: 20px;
-    bottom: 0px;
 }
 
 .direction-btn-menu {
