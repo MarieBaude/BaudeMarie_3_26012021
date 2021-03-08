@@ -12,7 +12,7 @@ button {
     margin-bottom: 55px;
     &:hover {
         box-shadow: gray 1px 7px 15px;
-        //background: adjust-color($color: linear-gradient($secondary-color, $primary-color), $lightness: 0%,);
+        opacity: 0.8;
     }
 }
 

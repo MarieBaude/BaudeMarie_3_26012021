@@ -44,11 +44,14 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        max-width: calc(100% - 100px);
         .text-name {
             font-family: 'Roboto-bold';
             margin-bottom: 10px;
             font-size: 19px;
             white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .text-details {
             font-family: 'Roboto-thin';
@@ -84,11 +87,15 @@
     }
     &:hover .text-price {
         animation: slide-right 0.6s ease-in forwards;
-        right: 80px;
+        right: 65px;
+        padding: 20px;
     }
     &:hover .rotate-center {
         animation: rotate-center 0.6s ease-in forwards;
         animation-delay: 300ms;
+    }
+    &:hover .dish-text {
+        max-width: calc(100% - 143px);  
     }
 }
 
